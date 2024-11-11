@@ -10,8 +10,8 @@ const listError = document.getElementById("list-error");
 let datas = [];
 
 add.addEventListener("click", () => {
-    const name = nameInput.value;
-    const profession = professionInput.value;
+    const name = nameInput.value.trim();
+    const profession = professionInput.value.trim();
     const age = ageInput.value;
     if (!name || !profession || !age) {
         logError.textContent = "Error :Please Make sure All the field are filled before adding in an emplyee"
